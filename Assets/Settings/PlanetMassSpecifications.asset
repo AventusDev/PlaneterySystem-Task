@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bec3474b1e106a4790cd2a16364c513, type: 3}
+  m_Name: PlanetMassSpecifications
+  m_EditorClassIdentifier: 
+  massClasses:
+  - massClassEnum: 0
+    massMin: 0
+    massMax: 0.00001
+    radiusMin: 0
+    radiusMax: 0.03
+  - massClassEnum: 1
+    massMin: 0.00001
+    massMax: 0.1
+    radiusMin: 0.03
+    radiusMax: 0.7
+  - massClassEnum: 2
+    massMin: 0.1
+    massMax: 0.5
+    radiusMin: 0.5
+    radiusMax: 1.2
+  - massClassEnum: 3
+    massMin: 0.5
+    massMax: 2
+    radiusMin: 0.8
+    radiusMax: 1.9
+  - massClassEnum: 4
+    massMin: 2
+    massMax: 10
+    radiusMin: 1.3
+    radiusMax: 3.3
+  - massClassEnum: 6
+    massMin: 50
+    massMax: 5000
+    radiusMin: 3.5
+    radiusMax: 27
+  - massClassEnum: 5
+    massMin: 10
+    massMax: 50
+    radiusMin: 2.1
+    radiusMax: 5.7
