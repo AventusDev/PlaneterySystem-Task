@@ -10,6 +10,8 @@ public class PlaneteryObject : MonoBehaviour, IPlaneteryObject
     public float PlaneteryDistance { get => planeteryDistance; set => planeteryDistance = value; }
     private float radius;
     public float Radius { get => radius; set => radius = value; }
+    private float speed;
+    public float Speed { get => speed; set => speed = value; }
     [SerializeField] private GameObject _planet;
     private void Start()
     {
@@ -32,6 +34,6 @@ public class PlaneteryObject : MonoBehaviour, IPlaneteryObject
     }
     public void RotatePlanet(float deltaTime)
     {
-        transform.Rotate(Vector3.up * 100 * deltaTime);
+        transform.Rotate(Vector3.up * speed * deltaTime);
     }
 }

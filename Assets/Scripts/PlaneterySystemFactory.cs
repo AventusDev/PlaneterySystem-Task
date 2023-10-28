@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using MassClass = PlaneteryObjectMassClassSpecifications.MassClass;
@@ -71,6 +72,12 @@ public class PlaneterySystemFactory : MonoBehaviour, IPlaneterySystemFactory
         SetPlanetMass(planetObject, mass, massClass);
         SetPlanetRadius(planetObject, massClass, mass);
         SetPlanetDistance(planetObject);
+        SetPlanetSpeed(planetObject);
+    }
+
+    private void SetPlanetSpeed(IPlaneteryObject planetObject)
+    {
+        planetObject.Speed = UnityEngine.Random.Range(80f, 256f);
     }
 
     private void SetPlanetMass(IPlaneteryObject planetObject, float mass, MassClass massClass)
